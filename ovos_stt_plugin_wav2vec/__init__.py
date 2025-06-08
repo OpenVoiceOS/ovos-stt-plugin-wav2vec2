@@ -4,9 +4,10 @@ from typing import Optional
 import torch
 import torchaudio
 from ovos_plugin_manager.templates.stt import STT
+from ovos_utils import classproperty
+from ovos_utils.lang import standardize_lang_tag
 from speech_recognition import AudioData
 from transformers import Wav2Vec2ForCTC, Wav2Vec2Processor
-from ovos_utils.lang import standardize_lang_tag
 
 
 class Wav2VecSTT(STT):
@@ -140,10 +141,9 @@ class Wav2VecSTT(STT):
         if self.config.get("use_cuda"):
             self.asr_model.to("cuda")
 
-    @property
-    def available_languages(self) -> set:
-        return set(standardize_lang_tag(t)
-                   for t in self.LANG2MODEL.keys())
+    @classproperty
+    def available_languages(cls) -> set:
+        return set(standardize_lang_tag(t) for t in cls.LANG2MODEL.keys())
 
     def transcribe_file(self, file_path: str) -> str:
         waveform, sample_rate = torchaudio.load(file_path)
