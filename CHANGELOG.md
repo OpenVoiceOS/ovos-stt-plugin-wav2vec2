@@ -1,13 +1,12 @@
 # Changelog
 
-## [0.3.0a1](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/tree/0.3.0a1) (2024-09-29)
+## [0.3.1a1](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/tree/0.3.1a1) (2025-06-08)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/compare/0.2.1...0.3.0a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/compare/0.3.0...0.3.1a1)
 
 **Merged pull requests:**
 
-- feat:cuda support [\#6](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/pull/6) ([JarbasAl](https://github.com/JarbasAl))
-- fix: update requirements.txt [\#5](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/pull/5) ([mikejgray](https://github.com/mikejgray))
+- fix: compatibility with ovos-plugin-manager 1.X.X [\#8](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/pull/8) ([JarbasAl](https://github.com/JarbasAl))
 
 
 
