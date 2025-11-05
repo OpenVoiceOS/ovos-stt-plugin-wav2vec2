@@ -53,7 +53,7 @@ PLUGIN_ENTRY_POINT = 'ovos-stt-plugin-wav2vec = ovos_stt_plugin_wav2vec:Wav2VecS
 
 
 setup(
-    name='ovos-stt-plugin-wav2vec',
+    name='ovos_stt_plugin_wav2vec',
     version=get_version(),
     description='A wav2vec stt plugin for OVOS',
     url='https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec',
