@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.3a3](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/tree/0.3.3a3) (2025-12-19)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/compare/0.3.3a2...0.3.3a3)
+
+**Merged pull requests:**
+
+- chore\(deps\): update dependency python to 3.14 [\#14](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/pull/14) ([renovate[bot]](https://github.com/apps/renovate))
+
 ## [0.3.3a2](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/tree/0.3.3a2) (2025-12-18)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/compare/0.3.3a1...0.3.3a2)
