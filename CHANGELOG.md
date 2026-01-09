@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.3a4](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/tree/0.3.3a4) (2026-01-09)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/compare/0.3.3a3...0.3.3a4)
+
+**Merged pull requests:**
+
+- refactor: modernize/drop speech\_recognition [\#21](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/pull/21) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.3.3a3](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/tree/0.3.3a3) (2025-12-19)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/compare/0.3.3a2...0.3.3a3)
