@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.3a5](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/tree/0.3.3a5) (2026-06-11)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/compare/0.3.3a4...0.3.3a5)
+
+**Merged pull requests:**
+
+- docs: add TigreGotico attribution, link ILENIA [\#22](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/pull/22) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.3.3a4](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/tree/0.3.3a4) (2026-01-09)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/compare/0.3.3a3...0.3.3a4)
