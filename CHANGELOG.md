@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.3a7](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/tree/0.3.3a7) (2026-06-17)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/compare/0.3.3a5...0.3.3a7)
+
+**Merged pull requests:**
+
+- chore: add missing shared CI workflows [\#23](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/pull/23) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.3.3a5](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/tree/0.3.3a5) (2026-06-11)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/compare/0.3.3a4...0.3.3a5)
