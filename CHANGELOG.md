@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.3a8](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/tree/0.3.3a8) (2026-08-01)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/compare/0.3.3a7...0.3.3a8)
+
+**Merged pull requests:**
+
+- docs: rewrite README in Simplified Technical English [\#25](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/pull/25) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.3.3a7](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/tree/0.3.3a7) (2026-06-17)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/compare/0.3.3a5...0.3.3a7)
