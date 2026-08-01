@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ovos_stt_plugin_wav2vec"
+dynamic = ["version"]
+description = "A wav2vec stt plugin for OVOS"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+authors = [{ name = "JarbasAi", email = "jarbasai@mailfence.com" }]
+keywords = ["ovos", "plugin", "stt"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+]
+dependencies = [
+    "ovos-plugin-manager>=2.1.1,<3.0.0",
+    "ovos-utils>=0.8.4,<1.0.0",
+    "transformers",
+    "torch",
+    "torchaudio",
+    "langcodes",
+]
+
+[project.urls]
+Homepage = "https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2"
+
+[project.entry-points."opm.stt"]
+"ovos-stt-plugin-wav2vec" = "ovos_stt_plugin_wav2vec:Wav2VecSTT"
+
+[tool.setuptools.dynamic]
+version = { attr = "ovos_stt_plugin_wav2vec.version.__version__" }
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ovos_stt_plugin_wav2vec*"]

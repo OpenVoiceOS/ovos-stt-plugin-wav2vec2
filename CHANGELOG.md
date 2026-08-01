@@ -1,12 +1,56 @@
 # Changelog
 
-## [0.3.2a1](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/tree/0.3.2a1) (2025-11-05)
+## [0.3.3a8](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/tree/0.3.3a8) (2026-08-01)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/compare/0.3.1...0.3.2a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/compare/0.3.3a7...0.3.3a8)
 
 **Merged pull requests:**
 
-- Update requirements.txt [\#10](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/pull/10) ([JarbasAl](https://github.com/JarbasAl))
+- docs: rewrite README in Simplified Technical English [\#25](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/pull/25) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.3.3a7](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/tree/0.3.3a7) (2026-06-17)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/compare/0.3.3a5...0.3.3a7)
+
+**Merged pull requests:**
+
+- chore: add missing shared CI workflows [\#23](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/pull/23) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.3.3a5](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/tree/0.3.3a5) (2026-06-11)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/compare/0.3.3a4...0.3.3a5)
+
+**Merged pull requests:**
+
+- docs: add TigreGotico attribution, link ILENIA [\#22](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/pull/22) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.3.3a4](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/tree/0.3.3a4) (2026-01-09)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/compare/0.3.3a3...0.3.3a4)
+
+**Merged pull requests:**
+
+- refactor: modernize/drop speech\_recognition [\#21](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/pull/21) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.3.3a3](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/tree/0.3.3a3) (2025-12-19)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/compare/0.3.3a2...0.3.3a3)
+
+**Merged pull requests:**
+
+- chore\(deps\): update dependency python to 3.14 [\#14](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/pull/14) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [0.3.3a2](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/tree/0.3.3a2) (2025-12-18)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/compare/0.3.3a1...0.3.3a2)
+
+**Merged pull requests:**
+
+- chore: Configure Renovate [\#13](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/pull/13) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [0.3.3a1](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/tree/0.3.3a1) (2025-11-05)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-wav2vec2/compare/0.3.2...0.3.3a1)
 
 
 

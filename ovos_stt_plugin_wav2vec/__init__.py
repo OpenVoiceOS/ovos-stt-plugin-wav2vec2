@@ -6,7 +6,7 @@ import torchaudio
 from ovos_plugin_manager.templates.stt import STT
 from ovos_utils import classproperty
 from ovos_utils.lang import standardize_lang_tag
-from speech_recognition import AudioData
+from ovos_plugin_manager.utils.audio import AudioData, AudioFile
 from transformers import Wav2Vec2ForCTC, Wav2Vec2Processor
 
 
@@ -172,11 +172,10 @@ class Wav2VecSTT(STT):
 if __name__ == "__main__":
     b = Wav2VecSTT({"lang": "pt", "model": "jonatasgrosman/wav2vec2-xls-r-1b-portuguese"})
     print(sorted(list(b.available_languages)))
-    from speech_recognition import Recognizer, AudioFile
 
     eu = "/home/miro/PycharmProjects/ovos-stt-wav2vec-plugin/9ooDUDs5.wav"
     with AudioFile(eu) as source:
-        audio = Recognizer().record(source)
+        audio = source.read()
 
     a = b.execute(audio, language="pt")
     print(a)

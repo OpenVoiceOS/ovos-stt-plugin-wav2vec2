@@ -1,0 +1,17 @@
+name: License Check
+
+on:
+  pull_request:
+    branches: [dev]
+  workflow_dispatch:
+
+jobs:
+  license_check:
+    uses: OpenVoiceOS/gh-automations/.github/workflows/license-check.yml@dev
+    secrets: inherit
+    with:
+      # NVIDIA CUDA wheels (pulled transitively by torch) ship proprietary,
+      # unparseable license metadata, so pilosus tags them Other/Error. They are
+      # redistributable runtime binaries used as-is, not copyleft — false positives.
+      exclude_packages: >-
+        (?i:^nvidia-[a-z0-9-]*([=<>!~ @;].*)?$)|(?i:^cuda-[a-z0-9-]*([=<>!~ @;].*)?$)
