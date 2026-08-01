@@ -2,11 +2,13 @@
 
 ## Description
 
-OVOS plugin for [Wav2Vec2](https://ai.meta.com/blog/wav2vec-20-learning-the-structure-of-speech-from-raw-audio/)
+This is an OVOS speech-to-text (STT) plugin for [Wav2Vec2](https://ai.meta.com/blog/wav2vec-20-learning-the-structure-of-speech-from-raw-audio/) models. It loads a Wav2Vec2 model from Hugging Face and transcribes audio with it. If you do not set a model, the plugin picks one for you based on the language.
 
 ## Install
 
-`pip install ovos-stt-plugin-wav2vec`
+```bash
+pip install ovos-stt-plugin-wav2vec
+```
 
 ## Configuration
 
@@ -19,18 +21,19 @@ OVOS plugin for [Wav2Vec2](https://ai.meta.com/blog/wav2vec-20-learning-the-stru
   }
 ```
 
-`"model"` can be any  [compatible wav2vec2](https://huggingface.co/models?pipeline_tag=automatic-speech-recognition&sort=likes&search=%2Fwav2vec2) model from hugging face, if not set, it will be automatically selected based on language
+`model` can be any [compatible Wav2Vec2 model](https://huggingface.co/models?pipeline_tag=automatic-speech-recognition&sort=likes&search=%2Fwav2vec2) from Hugging Face. If you do not set it, the plugin picks a model based on `lang`.
 
 ### Models
 
-> If your language is not supported you can use `"facebook/mms-1b-all"`, but in that case check out the dedicated plugin [ovos-stt-plugin-mms](https://github.com/OpenVoiceOS/ovos-stt-plugin-mms)
+If your language is not in the list below, use `"facebook/mms-1b-all"` as the model. In that case, use the dedicated [ovos-stt-plugin-mms](https://github.com/OpenVoiceOS/ovos-stt-plugin-mms) plugin instead.
 
-Supported languages: `'ab'`, `'ar'`, `'as'`, `'ba'`, `'bas'`, `'bg'`, `'bn'`, `'br'`, `'ca'`, `'cnh'`, `'cv'`, `'cy'`,
-`'cz'`, `'da'`, `'de'`, `'el'`, `'en'`, `'eo'`, `'es'`, `'fa'`, `'fi'`, `'fr'`, `'ga'`, `'gl'`,  `'gn'`, `'ha'`, `'he'`,
-`'hi'`, `'hk'`, `'hu'`, `'hy'`, `'ia'`, `'id'`, `'it'`, `'jp'`,  `'jv'`, `'ka'`, `'ko'`, `'ku'`, `'ky'`, `'lb'`, `'lg'`,
-`'lt'`, `'ml'`, `'mn'`, `'mr'`, `'mt'`, `'ne'`, `'nl'`, `'or'`, `'pa'`, `'pl'`, `'pt'`, `'rm-sursilv'`, `'rm-vallader'`, 
-`'ro'`, `'ru'`, `'sah'`, `'sk'`, `'sl'`, `'su'`, `'sv'`, `'sw'`, `'ta'`, `'te'`, `'tr'`, `'tt'`, `'uk'`, `'ur'`, `'vi'`, `'zh'`
+Supported languages: `ab`, `ar`, `as`, `ba`, `bas`, `bg`, `bn`, `br`, `ca`, `cnh`, `cv`, `cy`,
+`cz`, `da`, `de`, `el`, `en`, `eo`, `es`, `fa`, `fi`, `fr`, `ga`, `gl`, `gn`, `ha`, `he`,
+`hi`, `hk`, `hu`, `hy`, `ia`, `id`, `it`, `jp`, `jv`, `ka`, `ko`, `ku`, `ky`, `lb`, `lg`,
+`lt`, `ml`, `mn`, `mr`, `mt`, `ne`, `nl`, `or`, `pa`, `pl`, `pt`, `rm-sursilv`, `rm-vallader`,
+`ro`, `ru`, `sah`, `sk`, `sl`, `su`, `sv`, `sw`, `ta`, `te`, `tr`, `tt`, `uk`, `ur`, `vi`, `zh`
 
+The plugin maps each language to a default model:
 
 ```python
 LANG2MODEL = {
@@ -85,12 +88,6 @@ LANG2MODEL = {
     "hi": "infinitejoy/wav2vec2-large-xls-r-300m-hindi",
     "rm-vallader": "infinitejoy/wav2vec2-large-xls-r-300m-romansh-vallader",
     "rm-sursilv": "infinitejoy/wav2vec2-large-xls-r-300m-romansh-sursilvan",
-    # "fi": "infinitejoy/wav2vec2-large-xls-r-300m-finnish",
-    # "hu": "infinitejoy/wav2vec2-large-xls-r-300m-hungarian",
-    # "el": "infinitejoy/wav2vec2-large-xls-r-300m-greek",
-    # "gl": "infinitejoy/wav2vec2-large-xls-r-300m-galician",
-    # "ar": "infinitejoy/wav2vec2-large-xls-r-300m-arabic",
-    # "id": "infinitejoy/wav2vec2-large-xls-r-300m-indonesian",
 
     "id": "indonesian-nlp/wav2vec2-large-xlsr-indonesian",
     "lg": "indonesian-nlp/wav2vec2-luganda",
@@ -118,14 +115,19 @@ LANG2MODEL = {
 }
 ```
 
+## Related projects
+
+- [OpenVoiceOS/ovos-stt-plugin-mms](https://github.com/OpenVoiceOS/ovos-stt-plugin-mms) — STT plugin for `facebook/mms-1b-all`, for languages not in this plugin's list
+- [OpenVoiceOS/ovos-plugin-manager](https://github.com/OpenVoiceOS/ovos-plugin-manager) — loads and configures STT plugins for OVOS
+
 ## Credits
 
-This plugin was developed by [TigreGotico](https://tigregotico.pt) for OpenVoiceOS under the [ILENIA](https://proyectoilenia.es) project.
+[TigreGotico](https://tigregotico.pt) built this plugin for OpenVoiceOS under the [ILENIA](https://proyectoilenia.es) project.
 
 <img src="img.png" width="128"/>
 
-> This plugin was funded by the Ministerio para la Transformación Digital y de la Función Pública and Plan de Recuperación, Transformación y Resiliencia - Funded by EU – NextGenerationEU within the framework of the project [ILENIA](https://proyectoilenia.es) with reference 2022/TL22/00215337
+> The Ministerio para la Transformación Digital y de la Función Pública and the Plan de Recuperación, Transformación y Resiliencia funded this plugin. Funded by EU, NextGenerationEU, within the framework of the project [ILENIA](https://proyectoilenia.es), reference 2022/TL22/00215337.
 
 <img src="img_1.png" width="64"/>
 
-> O [Proxecto Nós](https://github.com/proxectonos) é un proxecto da Xunta de Galicia cuxa execución foi encomendada á Universidade de Santiago de Compostela, a través de dúas entidades punteiras de investigación en intelixencia artificial e tecnoloxías da linguaxe: o ILG (Instituto da Lingua Galega) e o CiTIUS (Centro Singular de Investigación en Tecnoloxías Intelixentes).
+> O [Proxecto Nós](https://github.com/proxectonos) é un proxecto da Xunta de Galicia. A súa execución foi encomendada á Universidade de Santiago de Compostela, a través de dúas entidades de investigación en intelixencia artificial e tecnoloxías da linguaxe: o ILG (Instituto da Lingua Galega) e o CiTIUS (Centro Singular de Investigación en Tecnoloxías Intelixentes).
